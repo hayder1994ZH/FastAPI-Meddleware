@@ -5,7 +5,10 @@ __pycache__/
 
 # C extensions
 *.so
-
+MD-env
+alembic.ini
+images
+alembic
 # Distribution / packaging
 .Python
 build/
