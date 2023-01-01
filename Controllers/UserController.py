@@ -10,5 +10,5 @@ class UserController:
         return self.UserRepo.getList()
 
     def store(self, request, response):
-        user = User(username=request.username, email=request.email, phone=request.phone, address=request.address, password=hash_password(request.password))
+        user = User(full_name=request.full_name, username=request.username, email=request.email, phone=request.phone, address=request.address, password=hash_password(request.password))
         return self.UserRepo.store(user, response)

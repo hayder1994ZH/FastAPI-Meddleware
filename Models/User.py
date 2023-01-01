@@ -8,6 +8,7 @@ from fastapi import Depends, FastAPI, HTTPException, status
 from config.moduls import Role, RolePermissions
 
 class User(BaseModel):
+    full_name :str
     username :str
     email :str
     phone :str
@@ -20,6 +21,7 @@ class User(BaseModel):
         orm_mode = True
 
 class Create(BaseModel):
+    full_name :str
     username :str
     password :str
     email :str
@@ -27,6 +29,7 @@ class Create(BaseModel):
     address :Optional[str] = None
 
 class Update(BaseModel):
+    full_name :str
     username :Optional[str]
     password :Optional[str]
     email :Optional[str]

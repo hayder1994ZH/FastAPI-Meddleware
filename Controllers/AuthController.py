@@ -12,5 +12,5 @@ class AuthController:
         return self.AuthRepo.login(request, response)
 
     def register(self, request, response):
-        user = User(username=request.username, email=request.email, phone=request.phone, address=request.address, password=hash_password(request.password))
+        user = User(full_name=request.full_name, username=request.username, email=request.email, phone=request.phone, address=request.address, password=hash_password(request.password))
         return self.AuthRepo.store(user, response)
