@@ -8,7 +8,6 @@ __pycache__/
 MD-env
 alembic.ini
 images
-alembic
 # Distribution / packaging
 .Python
 build/

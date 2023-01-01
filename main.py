@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from routers import  user, login, post, rolePermission
 from fastapi.encoders import jsonable_encoder
 from starlette.requests import Request
